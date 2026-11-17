@@ -165,19 +165,35 @@ nav a:hover {
   background: #f5f7fa;
 }
 
+.donate-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,188,212,0.25);
+}
 
 /* =========================================
-   PROFESSIONAL ABOUT SECTION
+   ABOUT SECTION
 ========================================= */
 
 .about-section {
-  background: #ffffff;
+  background: #fff;
   padding: 85px 0;
 }
 
-.about-intro {
+.about-heading {
   max-width: 850px;
-  margin: 0 auto 65px;
+  margin: 0 auto 38px;
   text-align: center;
 }
 
@@ -190,67 +206,66 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.about-intro h2 {
+.about-heading h2 {
   font-size: 36px;
   color: #0a2a43;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
-.about-intro p {
-  color: #626b73;
-  font-size: 16px;
-  line-height: 1.9;
+/* WHO WE ARE AND OUR STORY */
+
+.about-intro-story {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-bottom: 38px;
+  align-items: stretch;
+}
+
+.about-panel {
+  padding: 32px;
+  background: #f5f8fa;
+  border-radius: 16px;
+  border-top: 4px solid #00bcd4;
+}
+
+.about-panel h3 {
+  color: #0a2a43;
+  font-size: 23px;
+  line-height: 1.35;
   margin-bottom: 15px;
 }
 
-.about-intro .about-lead {
-  color: #0a2a43;
-  font-size: 19px;
-  font-weight: 600;
-}
-
-/* OUR STORY */
-
-.about-story {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
-  align-items: center;
-  margin-bottom: 75px;
-}
-
-.story-image img {
-  width: 100%;
-  height: 390px;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-.story-content h3 {
-  color: #0a2a43;
-  font-size: 27px;
-  margin-bottom: 20px;
-}
-
-.story-content p {
+.about-panel p {
   color: #606970;
-  line-height: 1.9;
-  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.about-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.about-panel .about-lead {
+  color: #0a2a43;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .story-highlight {
   color: #0097a7 !important;
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: 700;
 }
 
-/* MISSION VISION VALUES */
+/* MISSION, VISION AND CORE VALUES */
 
 .about-values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  margin-bottom: 85px;
+  margin: 0 0 48px;
 }
 
 .about-value-card {
@@ -284,62 +299,13 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* FOUNDER SECTION */
-
-.founder-section {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 50px;
-  align-items: center;
-  padding: 45px;
-  background: #f5f8fa;
-  border-radius: 20px;
-  margin-bottom: 70px;
-}
-
-.founder-image img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 15px;
-}
-
-.founder-content h2 {
-  color: #0a2a43;
-  font-size: 32px;
-  margin-bottom: 5px;
-}
-
-.founder-content h4 {
-  color: #0097a7;
-  font-size: 15px;
-  margin-bottom: 22px;
-}
-
-.founder-content p {
-  color: #606970;
-  line-height: 1.9;
-  margin-bottom: 15px;
-}
-
-.founder-content blockquote {
-  border-left: 4px solid #00bcd4;
-  padding: 15px 20px;
-  margin-top: 22px;
-  background: #ffffff;
-  color: #0a2a43;
-  font-style: italic;
-  line-height: 1.8;
-  border-radius: 0 10px 10px 0;
-}
-
-/* CLOSING MESSAGE */
+/* ABOUT CLOSING MESSAGE */
 
 .about-closing {
   text-align: center;
   max-width: 750px;
   margin: 0 auto;
+  padding: 10px 15px 0;
 }
 
 .about-closing h3 {
@@ -352,66 +318,8 @@ nav a:hover {
   color: #606970;
   line-height: 1.9;
   margin-bottom: 25px;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .about-section {
-    padding: 55px 0;
-  }
-
-  .about-intro h2 {
-    font-size: 27px;
-  }
-
-  .about-intro .about-lead {
-    font-size: 17px;
-  }
-
-  .about-story {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-bottom: 50px;
-  }
-
-  .story-image img {
-    height: 260px;
-  }
-
-  .story-content h3 {
-    font-size: 23px;
-  }
-
-  .about-values-grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 55px;
-  }
-
-  .founder-section {
-    grid-template-columns: 1fr;
-    padding: 22px;
-    gap: 25px;
-    margin-bottom: 50px;
-  }
-
-  .founder-image img {
-    height: 380px;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .founder-content h2 {
-    font-size: 26px;
-  }
-
-}
-
-
-/* =========================================
-   AMI CARES - WHAT WE DO
-   PROFESSIONAL SERVICE CARDS
+}/* =========================================
+   WHAT WE DO - SERVICE CARDS
 ========================================= */
 
 .services-section {
@@ -508,39 +416,6 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* TABLET */
-
-@media (max-width: 900px) {
-  .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-  .services-section {
-    padding: 55px 0;
-  }
-
-  .services-heading h2 {
-    font-size: 28px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .service-image {
-    height: 220px;
-  }
-
-  .service-content {
-    padding: 20px;
-  }
-}
-
 /* =========================================
    PROJECTS OVERVIEW
 ========================================= */
@@ -553,7 +428,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .project-card {
@@ -591,12 +466,6 @@ nav a:hover {
   line-height: 1.4;
 }
 
-.project-card p {
-  color: #666;
-  font-size: 14px;
-  padding: 0 20px 15px;
-}
-
 .project-card::after {
   content: "VIEW PROJECT  →";
   display: block;
@@ -612,14 +481,17 @@ nav a:hover {
 ========================================= */
 
 .project-gallery {
+  grid-column: 1 / -1;
   width: 100%;
   max-width: 1100px;
-  margin: 35px auto;
+  justify-self: center;
+  margin: 20px auto;
   padding: 35px;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 8px 35px rgba(0,0,0,0.09);
   animation: fadeIn 0.4s ease;
+  min-width: 0;
 }
 
 .project-gallery h3 {
@@ -645,7 +517,6 @@ nav a:hover {
   margin-bottom: 8px;
 }
 
-.project-gallery > button,
 .project-gallery button {
   border: none;
   cursor: pointer;
@@ -658,48 +529,12 @@ nav a:hover {
   transition: background 0.3s ease;
 }
 
-.project-gallery > button:hover,
 .project-gallery button:hover {
   background: #0097a7;
 }
 
 /* =========================================
-   PROJECT DETAILS HEADER
-   For use with the updated JavaScript
-========================================= */
-
-.project-detail-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-
-.project-status {
-  display: inline-block;
-  padding: 6px 13px;
-  border-radius: 30px;
-  background: #e2f6f0;
-  color: #16815e;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.project-date {
-  color: #777;
-  font-size: 13px;
-}
-
-.project-description {
-  max-width: 950px;
-  margin: 20px 0 30px;
-}
-
-/* =========================================
    SLIDING PROJECT GALLERY
-   For use with the updated JavaScript
 ========================================= */
 
 .gallery-section {
@@ -729,6 +564,7 @@ nav a:hover {
   overflow: hidden;
   border-radius: 14px;
   background: #f2f4f6;
+  width: 100%;
 }
 
 .gallery-track {
@@ -739,6 +575,7 @@ nav a:hover {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   padding: 5px;
+  width: 100%;
 }
 
 .gallery-track::-webkit-scrollbar {
@@ -986,21 +823,78 @@ nav a:hover {
   margin-bottom: 22px;
 }
 
-.donate-btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #00bcd4, #0097a7);
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* =========================================
+   SMALL FOUNDER PROFILE
+========================================= */
+
+.founder-mini-profile {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  align-items: center;
+  gap: 25px;
+  max-width: 760px;
+  margin: 48px auto 0;
+  padding: 24px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e8eef1;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-.donate-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,188,212,0.25);
+.founder-mini-image img {
+  width: 145px;
+  height: 165px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+}
+
+.founder-mini-content .about-label {
+  margin-bottom: 7px;
+}
+
+.founder-mini-content h3 {
+  color: #0a2a43;
+  font-size: 23px;
+  margin-bottom: 2px;
+}
+
+.founder-mini-content h4 {
+  color: #0097a7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.founder-mini-content > p,
+.founder-full-bio p {
+  color: #606970;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.founder-more summary {
+  color: #008b9b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.founder-full-bio {
+  padding-top: 12px;
+}
+
+.founder-full-bio blockquote {
+  border-left: 4px solid #00bcd4;
+  padding: 12px 16px;
+  margin-top: 12px;
+  background: #f5f8fa;
+  color: #0a2a43;
+  font-style: italic;
+  line-height: 1.75;
+  border-radius: 0 9px 9px 0;
 }
 
 /* =========================================
@@ -1091,6 +985,10 @@ nav a:hover {
 ========================================= */
 
 @media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1152,18 +1050,86 @@ nav a:hover {
     margin-bottom: 30px;
   }
 
+  /* ABOUT MOBILE */
+
+  .about-section {
+    padding: 55px 0;
+  }
+
+  .about-heading h2 {
+    font-size: 28px;
+  }
+
+  .about-intro-story {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .about-panel {
+    padding: 25px 22px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 38px;
+  }
+
+  /* FOUNDER MOBILE */
+
+  .founder-mini-profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 16px;
+    padding: 22px 18px;
+    margin-top: 35px;
+  }
+
+  .founder-mini-image img {
+    width: 125px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  /* SERVICES MOBILE */
+
+  .services-section {
+    padding: 55px 0;
+  }
+
+  .services-heading h2 {
+    font-size: 28px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-image {
+    height: 220px;
+  }
+
+  .service-content {
+    padding: 20px;
+  }
+
+  /* PROJECTS MOBILE */
+
   .project-grid {
     grid-template-columns: 1fr;
     gap: 22px;
   }
 
-  .project-card img {
-    height: 220px;
-  }
-
   .project-gallery {
+    grid-column: 1;
+    width: 100%;
     padding: 20px;
     margin: 20px auto;
+  }
+
+  .project-card img {
+    height: 220px;
   }
 
   .project-gallery h3 {
@@ -1180,6 +1146,8 @@ nav a:hover {
     height: 36px;
     font-size: 19px;
   }
+
+  /* LIGHTBOX MOBILE */
 
   #lightbox {
     padding: 55px 45px;
@@ -1245,50 +1213,419 @@ nav a:hover {
     height: 200px;
   }
 }
+/* =========================================
+   AMI CARES FOUNDATION
+   OFFICIAL BRAND COLOUR THEME
+========================================= */
 
-/* FIX: MAKE PROJECT DETAILS FULL WIDTH */
-
-#projects .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: start;
+:root {
+  --ami-navy: #172B55;
+  --ami-green: #3B9B45;
+  --ami-lime: #A6D943;
+  --ami-blue: #398BCB;
+  --ami-light-green: #F3F9ED;
+  --ami-light-blue: #F0F6FB;
+  --ami-white: #FFFFFF;
+  --ami-text: #45546B;
 }
 
-#projects .project-gallery {
-  grid-column: 1 / -1;
-  width: 100%;
-  max-width: 1100px;
-  justify-self: center;
-  margin: 20px auto;
-  min-width: 0;
+/* GENERAL WEBSITE */
+
+body {
+  color: var(--ami-text);
 }
 
-/* Ensure gallery images display properly */
-#projects .gallery-section,
-#projects .gallery-slider {
-  width: 100%;
-  min-width: 0;
+.section h2,
+.about-heading h2,
+.services-heading h2,
+.founder-content h2,
+.about-panel h3,
+.about-value-card h3,
+.about-closing h3,
+.service-content h3,
+.project-card h3,
+.project-gallery h3 {
+  color: var(--ami-navy);
 }
 
-#projects .gallery-track {
-  width: 100%;
+/* HEADER AND NAVIGATION */
+
+header {
+  background: var(--ami-navy);
 }
 
-/* Make project descriptions easier to read */
-#projects .project-gallery > p {
-  max-width: 100%;
-  line-height: 1.9;
-  margin-bottom: 18px;
+nav a:hover,
+nav a:focus {
+  color: var(--ami-lime);
 }
 
-/* Mobile layout */
+.brand span {
+  color: var(--ami-white);
+}
+
+/* HERO SECTION */
+
+.hero {
+  background-color: var(--ami-navy);
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    rgba(23, 43, 85, 0.30),
+    rgba(23, 43, 85, 0.78)
+  );
+}
+
+/* SECTION LABELS */
+
+.about-label,
+.service-number {
+  color: var(--ami-green);
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  background: var(--ami-white);
+}
+
+.about-panel {
+  border-top: 4px solid var(--ami-green);
+}
+
+.story-highlight {
+  color: var(--ami-green) !important;
+}
+
+.about-value-card {
+  background: var(--ami-light-green);
+  border-bottom: 4px solid var(--ami-green);
+}
+
+.value-icon {
+  color: var(--ami-green);
+}
+
+/* FOUNDER SECTION */
+
+.founder-section {
+  background: var(--ami-light-green);
+  border-left: 5px solid var(--ami-green);
+}
+
+.founder-content h2 {
+  color: var(--ami-navy);
+}
+
+.founder-content h4 {
+  color: var(--ami-blue);
+}
+
+.founder-content blockquote {
+  border-left-color: var(--ami-lime);
+  background: var(--ami-white);
+  color: var(--ami-navy);
+}
+
+/* WHAT WE DO */
+
+.services-section {
+  background: var(--ami-light-blue);
+}
+
+.service-card {
+  border-bottom: 3px solid var(--ami-green);
+}
+
+.service-number {
+  color: var(--ami-green);
+}
+
+.service-card:hover {
+  border-bottom-color: var(--ami-lime);
+}
+
+/* PROJECTS */
+
+.project-card {
+  border-bottom: 3px solid var(--ami-green);
+}
+
+.project-card:hover {
+  border-bottom-color: var(--ami-lime);
+}
+
+.project-gallery > button,
+.project-gallery button {
+  background: var(--ami-blue);
+}
+
+.project-gallery > button:hover,
+.project-gallery button:hover {
+  background: var(--ami-navy);
+}
+
+.project-status {
+  background: var(--ami-light-green);
+  color: var(--ami-green);
+}
+
+/* GALLERY */
+
+.gallery-arrow,
+.lightbox-arrow {
+  background: var(--ami-navy);
+}
+
+.gallery-arrow:hover,
+.lightbox-arrow:hover {
+  background: var(--ami-green);
+}
+
+.gallery-counter,
+.lightbox-counter {
+  color: var(--ami-green);
+}
+
+/* SUPPORT AND DONATION */
+
+.support-card {
+  border-top: 4px solid var(--ami-green);
+}
+
+.support-card h3 {
+  color: var(--ami-navy);
+}
+
+.donate-btn {
+  background: var(--ami-green);
+  color: var(--ami-white);
+  border: 2px solid var(--ami-green);
+}
+
+.donate-btn:hover {
+  background: var(--ami-navy);
+  border-color: var(--ami-navy);
+  color: var(--ami-white);
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--ami-navy);
+  color: var(--ami-white);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--ami-lime);
+}
+
+.footer-section a:hover {
+  color: var(--ami-lime);
+}
+
+.footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+/* GENERAL BUTTON HOVER */
+
+button {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* FOUNDER READ MORE SECTION */
+
+.founder-mini-content {
+  background: var(--ami-light-green);
+  border-left: 5px solid var(--ami-green);
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.founder-mini-content h3 {
+  color: var(--ami-navy);
+}
+
+.founder-mini-content h4 {
+  color: var(--ami-blue);
+}
+
+.founder-more summary {
+  background: var(--ami-blue);
+  color: var(--ami-white);
+}
+
+.founder-more summary:hover {
+  background: var(--ami-navy);
+}
+
+.founder-full-bio blockquote {
+  border-left: 4px solid var(--ami-lime);
+  background: var(--ami-light-green);
+  color: var(--ami-navy);
+}
+
+/* MOBILE BRAND COLOURS */
+
 @media (max-width: 768px) {
-  #projects .project-grid {
-    grid-template-columns: 1fr;
+  header {
+    background: var(--ami-navy);
   }
 
-  #projects .project-gallery {
-    grid-column: 1;
-    width: 100%;
-    padding: 20px;
+  .about-value-card,
+  .service-card,
+  .support-card {
+    border-bottom-color: var(--ami-green);
   }
+}
+/* =========================================
+   AMI CARES: REFINED BRAND STYLE
+========================================= */
+
+:root {
+  --ami-navy: #172B55;
+  --ami-green: #4A914F;
+  --ami-soft-green: #F5F8F2;
+  --ami-blue: #398BCB;
+  --ami-text: #566174;
+}
+
+/* Softer overall appearance */
+
+body {
+  color: var(--ami-text);
+  background: #ffffff;
+}
+
+.about-section {
+  background: #ffffff;
+}
+
+.services-section {
+  background: #F7F9FC;
+}
+
+/* Founder profile */
+
+.founder-mini-content {
+  background: var(--ami-soft-green);
+  border-left: 3px solid var(--ami-green);
+  border-radius: 12px;
+}
+
+.founder-mini-content h3 {
+  color: var(--ami-navy);
+}
+
+.founder-mini-content h4 {
+  color: var(--ami-green);
+}
+
+/* Read more as a simple text link */
+
+.founder-more summary {
+  display: inline-block;
+  background: transparent !important;
+  color: var(--ami-green) !important;
+  padding: 5px 0;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.founder-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.founder-more summary::after {
+  content: " →";
+  transition: margin-left 0.2s ease;
+}
+
+.founder-more summary:hover {
+  background: transparent !important;
+  color: var(--ami-navy) !important;
+}
+
+.founder-more summary:hover::after {
+  margin-left: 5px;
+}
+
+.founder-full-bio {
+  background: #ffffff;
+  border: 1px solid #E6EDE3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 12px;
+}
+
+/* Facebook and Instagram links */
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  color: #A6D6A0 !important;
+  text-decoration: underline;
+}
+
+/* Refined footer */
+
+.footer {
+  background: var(--ami-navy);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #A6D6A0;
+}
+
+/* Refined buttons across the website */
+
+.donate-btn {
+  background: var(--ami-green);
+  border-color: var(--ami-green);
+  border-radius: 6px;
+}
+
+.donate-btn:hover {
+  background: var(--ami-navy);
+  border-color: var(--ami-navy);
+}
+
+/* Softer card accents */
+
+.about-value-card,
+.service-card,
+.project-card {
+  border-bottom-color: #D6E6D2;
+}
+
+.about-value-card:hover,
+.service-card:hover,
+.project-card:hover {
+  border-bottom-color: var(--ami-green);
 }
